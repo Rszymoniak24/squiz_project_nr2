@@ -1,0 +1,138 @@
+
+.main{
+  width:320px;
+}
+.container {
+  padding:0;
+  width:320px;
+  height: 1350px;
+}
+.navi {
+  width: 100%;
+}
+nav > a{
+  display:block;
+}
+nav > a:hover{
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.hamb{
+  margin-top: 35px;
+  display: block;
+}
+.navi--bottom {
+  height: 300px;
+}
+.navi--bottom__menu {
+  display:none;
+  text-align: center;
+  float: left;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.form__3  {
+  margin:0;
+  padding:10px;
+  width: 300px;
+}
+.form__4  {
+  margin:0;
+  padding:10px;
+  width: 300px;
+}
+.form__1{
+  margin:0;
+  padding:10px;
+  width:300px;
+  height:370px;
+}
+.form__2{
+  margin:0;
+  padding:10px;
+  height: 0px;
+  width:300px;
+}
+.slider {
+  width: 255px;
+}
+#credit--card__input {
+  width: 65%;
+  margin-left: 55px;
+}
+#credit--card__input__step--2 {
+  left: 65px;
+  width: 23%;
+  margin-left: 0px
+}
+#credit--card__input__step--3{
+  left: 140px;
+  margin-left: 0px
+}
+#credit--card__input__step--4{
+  left: 200px;
+  margin-left: 0px
+}
+#credit--card__input-container{
+  width:300px;
+}
+.bigdolar{
+  top: 418px;
+  left: 64px;
+}
+.card__ico {
+
+  top: 89px;
+  left: 25px;
+  position: absolute;
+  margin-left: 0px;
+  /* margin-left: 144px; */
+}
+
+
+
+.footer__nav > a {
+  float:none;
+}
+.navi--top__logo{
+  top:45px;
+}
+.navi--bottom__menu_nojs{
+  display:block;
+}
+.navi_nojs{
+  height:340px;
+}
+.hamb_nojs{
+  display:none;
+}
+.form__2__nojs{
+  height:555px;
+}
+#page-wrapper{
+  height:1800px;
+}
+.step_2__nojs{
+  margin-left:0px;
+  left:10px;
+  width:27%;
+}
+.step_3__nojs{
+  margin-left:0px;
+
+}
+.step_4__nojs{
+  margin-left:0px;
+
+}
+.form--container{
+  padding: 0;
+}
+
+.footer__nav {
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+}

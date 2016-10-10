@@ -1,0 +1,73 @@
+<div class="container">
+  <div class=form--container>
+    <form name="form--donate" method="get">
+      <fieldset>
+        <legend class=hide>Donate box</legend>
+        <div class="form__1 form__1__nojs">
+          <h1 class="head--title"><label for="output">Donate our cause</label></h1>
+          <div class="bigdolar">$</div><input  placeholder="50" required title="none_js_input"  class="input__nojs" type=number min="1" max="100"><span id="red--price" class=hide>$<output  id="output">0</output></span><span id="donate--text">   can help us improve this product</span>
+          <label class=hide for=input>Slider</label>
+          <input class="test form__1--slider__nojs" id="input" type=range name=slide min="0" max="100" value=0 onchange="showVal()" oninput="showVal()" />
+
+          <div class="slider noselect hide">
+            <span id="slider--price">$<output  id="output__slider">0</output></span>
+          </div>
+          <p>  <label for=donate-check><input id="donate-check" type="checkbox" name="donate" value="donate">Yes, I would like to donate this amount monthly</label></p>
+          <p id="error__no--dolar">You cannot donate 0$</p>
+
+
+        </div>
+
+        <div class="form__2 form__2__nojs">
+          <p><span class="nr__box">2</span>Enter your information:</p>
+          <div class=form__2--box>
+            <p class="form__2--title"><label for="form__2--name">Name:</label></p>
+            <input name="form__2--name" class=grayholder required title="Example: Name Surname" pattern="[a-zA-Z]{3,30}\s[a-zA-Z]{3,30}" onblur="validate__name();validate__all()" id="form__2--name" type="text" placeholder="First Last">
+            <p class="form__2--error--name">Please enter correct name and surname</p>
+          </div>
+          <div class=form__2--box>
+            <p class="form__2--title">  <label for=form__2--email>Email:</label></p>
+            <input name="form__2--email" required title="Example: name@name.pl" pattern="([a-zA-Z0-9_\.\-])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})" onblur="validate__email();validate__all()" id="form__2--email" type="email" placeholder="your@email.com">
+            <p class="form__2--error--email">Please enter a valid e-mail address</p>
+
+          </div>
+          <div class="form__2--box clearme">
+            <p class="form__2--title"><label for=form__2--address>Address:</label></p>
+            <input name="form__2--address" required title="Example: Bankowa" pattern="[A-Za-z0-9 _,]*[A-Za-z0-9][A-Za-z0-9 _,]*" onblur="validate__address();validate__all()" id="form__2--address" type="text" placeholder="123 Main St, Apt 2">
+            <p class="form__2--error--address">Please enter your street address</p>
+
+          </div>
+          <div class=form__2--box>
+            <p class="form__2--title"><label for=form__2--city>City, State:</label></p>
+            <input name="form__2--city" required title="Example: Police,PL" pattern="[A-Za-z]+,[ ]?[A-Za-z]{2,}" oninput="validate__all()" onblur="validate__city();validate__all()" id="form__2--city" type="text" placeholder="Pittsburgh PA">
+            <p class="form__2--error--city">Please enter your city and state, separated by a comma</p>
+
+          </div>
+        </div>
+        <div class="form__3 form__3__nojs">
+
+          <p><span class="nr__box">3</span>Credit card info:</p>
+          <div class="card__ico"></div>
+          <div id="credit--card__input-container" ></div>
+          <input name="credit--card__step--1" required  class="on--border off--border" title="Example: 4444 4444 4444 4444" pattern="(?:\d[ -]?){15}\d" maxlength="16" oninput="validate__cc()" onblur="validate__cc()" id="credit--card__input" type="text" placeholder="1234 5678 9012 3456">
+          <input name="credit--card__step--2" required  title="Example: 11/16" pattern="((1[012])|(0[1-9]))[/]((1[6-9])|(2[1-9]))" class="cc_2 step_2__nojs on--border" maxlength="5" oninput="validate__cc__step_2()"  type="text" placeholder="MM/YY">
+          <input name="credit--card__step--3" required title="Example: 755" pattern="(?:\d[ -]?){2}\d" class="cc_3 step_3__nojs on--border" maxlength="3" onclick="add_back_cc()" oninput="validate__cc__step_3()" type="text" placeholder="CVC">
+          <input name="credit--card__step--4" required title="Example: 72000" pattern="(?:\d[ -]?){4}\d" class="cc_4 step_4__nojs on--border" maxlength="5" oninput="validate__cc__step_4()" onblur="validate__cc__step_4()"  type="text" placeholder="ZIP">
+
+          <p class="font__12 font__12__ie7">Please enter your card number, expiration date, cvv code and zip code</p>
+          <p class="credit--card__input--error">Please enter correct credit card number</p>
+          <p class="credit--card__input--correct">Hooray! You've succcessfully filled out your credit card information</p>
+
+
+
+        </div>
+        <div class=form__4>
+          <p class="donate__error">Please fill out all fields</p>
+
+          <div  id="submit">DONATE </div>
+          <input type=submit name="realsubmit" value="DONATE" id="realsubmit">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>

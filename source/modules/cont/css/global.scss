@@ -1,0 +1,676 @@
+
+
+input[type=range]::-webkit-slider-runnable-track {
+
+  width:100%;
+  height:40px;
+  background-color: #f9f9f9;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  background: linear-gradient(to bottom,  #f92b39 50%,#ae0d15 50%,#ae0d15 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+
+
+}
+#slider--price {
+  top: -113px;
+  z-index: 20;
+  color: #a80c1e;
+  position: absolute;
+  left:-2.8%;
+}
+
+input[type=range] {
+  position: relative;
+  height:139px;
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+/*STYLING POINTER*/
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  z-index: 10;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width:50px;
+  height:100px;
+  margin-top: -30px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  margin-bottom:14px;
+  background-image: url("{{file_dest}}/thumb.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  z-index: 10;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width:48px;
+  height:100px;
+  margin-top: -30px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  margin-bottom:14px;
+  background:none;
+  background-image: url("{{file_dest}}/thumb.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  border:none;
+
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  z-index: 10;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width:44px;
+  height:100px;
+  margin-top: 18px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  margin-bottom:14px;
+  background:none;
+  background-image: url("{{file_dest}}/thumb.png");
+  background-repeat: no-repeat;
+  border:none;
+
+}
+/*STYLING TRACK*/
+
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  //background-color: #f9f9f9;
+}
+
+input[type=range]::-moz-range-track {
+  width:100%;
+  height:40px;
+  background-color: #f9f9f9;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+}
+input[type="range"]::-moz-range-progress {
+  width:100%;
+  height:40px;
+  background-color: #f9f9f9;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f92b39+50,ae0d15+50,ae0d15+50 */
+  background: #f92b39; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f92b39 50%, #ae0d15 50%, #ae0d15 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #f92b39 50%,#ae0d15 50%,#ae0d15 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #f92b39 50%,#ae0d15 50%,#ae0d15 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f92b39', endColorstr='#ae0d15',GradientType=0 ); /* IE6-9 */
+
+}
+input[type=range]::-ms-track {
+  width:100%;
+  height:40px;
+  background-color: #f9f9f9;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  border: 1px solid #dddddd;
+  -webkit-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+}
+input[type=range]::-ms-fill-lower {
+  height: 40px;
+  border-radius: 40px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f92b39+50,ae0d15+50,ae0d15+50 */
+  background: #f92b39; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f92b39 50%, #ae0d15 50%, #ae0d15 50%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #f92b39 50%,#ae0d15 50%,#ae0d15 50%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #f92b39 50%,#ae0d15 50%,#ae0d15 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f92b39', endColorstr='#ae0d15',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  height:40px;
+  border-radius: 40px;
+}
+input[type=range]::-ms-fill-upper {
+  height:40px;
+  background-color: #f9f9f9;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+
+  box-shadow: inset 0px 10px 5px -9px rgba(0,0,0,0.75);
+
+  border: 1px solid #dddddd;
+}
+input[type=range]:focus::-ms-fill-upper {
+  height:40px;
+}
+input[type=range]::-ms-tooltip {
+  display: none;
+}
+
+.container{
+  width:980px;
+  height:950px;
+  padding-top: 11px;
+
+  background-color:#ffffff;
+}
+.head--title{
+  padding:0;
+  margin:0;
+  color:#a80c1e;
+  font-size: 32px;
+}
+.form__1{
+
+  height: 320px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+.form__1 > p{
+  font-size:18px;
+}
+#red--price{
+  color:#a80c1e;
+}
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.clearme{
+  clear:both;
+}
+.form__2{
+
+  display:none;
+  height: 0px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+#form__2--name {
+  height:50px;
+  width:300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+
+}
+.grayholder  {
+  input[placeholder]{
+
+    color: red;
+  }}
+
+
+
+
+
+
+  #form__2--address{
+    height:50px;
+    width:300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+  }
+  #form__2--email{
+    height:50px;
+    width:300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+  }
+  #form__2--city{
+    height:50px;
+    width:300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+  }
+
+  .slider{
+    height:20px;
+    width:600px;
+    position: relative;
+  }
+  .form__2--box{
+    width:48%;
+    margin: 0px;
+    float: left;
+    margin: 6px;
+    margin-top: 30px;
+  }
+  .form__2--error{
+    color:#a80c1e;
+  }
+  .form__2--error--name{
+    display:none;
+
+    color:#a80c1e;
+  }
+  .form__2--error--email{
+    display:none;
+
+    color:#a80c1e;
+  }
+  .form__2--error--address{
+    display:none;
+
+    color:#a80c1e;
+  }
+  .form__2--error--city{
+    display:none;
+
+    color:#a80c1e;
+  }
+  .credit--card__input--error{
+    display:none;
+
+    color:#a80c1e;
+  }
+  .credit--card__input--correct{
+    display:none;
+
+    color:green;
+  }
+  .form__3{
+
+    display:none;
+    height:0px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    position:relative;
+  }
+  .font__12{
+    margin-top: 90px;
+    font-size:12px;
+  }
+  #submit {
+
+    font-weight: 600;
+    display:none;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ae0d14;
+    border-bottom: 2px solid #f82b39;
+    color: #fff;
+    margin-left: 10px;
+    padding-top: 12px;
+    cursor:pointer;
+    &:hover{
+      background-color: #da5f6e;
+
+    }
+  }
+  #realsubmit {
+    font-weight: 600;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ae0d14;
+    border-bottom: 2px solid #f82b39;
+    color: #fff;
+    margin-left: 10px;
+    padding-top: 12px;
+    cursor:pointer;
+    &:hover{
+      background-color: #da5f6e;
+
+    }
+
+  }
+  #credit--card__input-container{
+    position: absolute;
+    width:630px;
+    height:40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    text-indent: 30px;
+    margin-top: 45px;
+  }
+
+
+  #credit--card__input{
+    margin-top: 55px;
+    margin-left: 45px;
+    position: absolute;
+    width: 27%;
+    background: none;
+    outline: transparent;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-top: 46px;
+    padding: 10px;
+    border-radius: 5px;
+
+    /* text-indent: 30px; */
+    background: none;
+    outline: transparent;
+    height: 39px;
+  }
+  #credit--card__input__step--2 {
+    position: absolute;
+    display: none;
+    width: 10%;
+    margin-bottom: 20px;
+    margin-top: 46px;
+    left: 235px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    background: none;
+    outline: transparent;
+    border: none;
+    height: 38px;
+  }
+  #credit--card__input__step--3 {
+    display: none;
+    margin-top: 45px;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-top: 46px;
+    left: 312px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    background: none;
+    outline: transparent;
+    border: none;
+    width: 63px;
+    height: 38px;
+  }
+  #credit--card__input__step--4 {
+    display: none;
+    margin-top: 45px;
+    position: absolute;
+    margin-bottom: 20px;
+    margin-top: 46px;
+    left: 391px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    background: none;
+    outline: transparent;
+    border: none;
+    width: 70px;
+    height: 38px;
+  }
+  #error__no--dolar{
+    display:none;
+    color:#a80c1e;
+  }
+  .hide{
+    visibility: hidden;
+    width:0px;
+    height: 0px;
+  }
+  .card__ico {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 100;
+    width: 33px;
+    height: 21px;
+    background-image: url(mysource_files/cc-front.png);
+    background-repeat: no-repeat;
+    background-size: 33px 21px;
+    text-indent: 30px;
+    top: 99px;
+    left: 6px;
+    position: absolute;
+  }
+  .mastercard{
+    z-index: 101;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-image: url(mysource_files/cc-mc.png);
+  }
+  .visa{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    background-image: url(mysource_files/cc-visa.png);
+  }
+  .back{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 101;
+    background-image: url(mysource_files/cc-back.png);
+  }
+  .nr__box{
+    padding: 3px;
+    padding-left: 7px;
+    border: 1px solid #000;
+    padding-right: 7px;
+    margin-right: 4px;
+    margin-left: 5px;
+    font-weight: 700;
+  }
+  .test{}
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently */
+    pointer-events:none;                         /*     not supported by any browser */
+  }
+  .form__1__nojs {
+    height: 200px;
+  }
+  .form__1--slider__nojs{
+    display:none;
+  }
+  .form__2__nojs{
+    display:block;
+    height:285px; }
+    .input__nojs{
+      height: 50px;
+      width: 100px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #bbbbbb;
+    }
+    .form__3__nojs{
+      display:block;
+      height:145px;
+      padding-top:20px;
+      padding-bottom: 20px;
+      position:relative;
+
+    }
+    .form__4{
+
+    }
+
+    .cc_2{
+      border:1px solid #bbb;
+
+    }
+
+    .step_2__nojs {
+      position: absolute;
+      width: 72px;
+      margin-bottom: 20px;
+      margin-top: 46px;
+      left: 250px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #bbbbbb;
+      /* text-indent: 30px; */
+      background: none;
+      outline: transparent;
+      height: 39px;
+      border:none;
+    }
+
+    .step_3__nojs {
+      margin-top: 45px;
+      position: absolute;
+      margin-bottom: 20px;
+      margin-top: 46px;
+      left: 340px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #bbbbbb;
+      /* text-indent: 30px; */
+      background: none;
+      outline: transparent;
+
+      height: 39px;
+      width: 60px;
+      border:none;
+
+    }
+    .step_4__nojs{
+      margin-top: 45px;
+      position: absolute;
+      margin-bottom: 20px;
+      margin-top: 46px;
+      left: 450px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #bbbbbb;
+      background: none;
+      outline: transparent;
+      height:39px;
+      width:70px;
+      border:none;
+
+
+    }
+    .off--border{
+      border: none;
+    }
+    .on--border{
+      border: 1px solid #bbbbbb;
+    }
+
+    .bigdolar{
+      color: #a80c1e;
+      position:absolute;
+      top: 213px;
+      left: 188px;
+    }
+    .donate__error{
+      display:none;
+      color:#a80c1e;
+    }
+
+    fieldset {
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      -ms-overflow-style:none;
+    }
+    body{
+      height:1600px;
+    }
+    .form--container{
+      padding-left: 144px;
+      padding-right: 189px;
+    }
+    .font__12__ie7{
+      margin-top: 120px;
+    }
+    .form__nojs{
+      width:270px;
+    }
+    .border--red{
+      border: 1px solid "#a80c1e";
+    }
+    .border--gray{
+      border:1px solid "#bbb";
+    }
+    *+html #form__2--name, *+html #form__2--city,*+html #form__2--email,*+html #form__2--address {
+      width: 270px;
+      height:20px;
+    }
+    *+html .input__nojs{
+      height:20px;
+      width: 35px;
+    }
+    *+html #credit--card__input{
+      height:20px;
+      margin-top: 55px;
+      position: absolute;
+      height: 20px;
+      padding: 0px;
+    }
+    *+html .cc_2,*+html .cc_3,*+html .cc_4{
+      margin-top: 55px;
+      position: absolute;
+      height: 20px;
+      padding: 0px;
+    }
+    *+html .step_3__nojs{
+      left:352px;
+    }
